@@ -1,14 +1,18 @@
 package Ukol2;
 
 public class Princezna extends PohadkovaPostava{
-    public Princezna(String jmeno, int vek) {
+    String prijmeni;
+
+    public Princezna(String jmeno, String prijmeni, int vek) {
         super(jmeno, vek);
+        this.prijmeni = prijmeni;
     }
 
     @Override
     void popis() {
-        System.out.print("Jmeno: " + getJmeno());
-        System.out.print("Vek: " + getVek());
+        System.out.println("Jmeno: " + getJmeno());
+        System.out.println("Prijmeni: " + getPrijmeni());
+        System.out.println("Vek: " + getVek());
     }
 
     private void zmenJmeno(String jmeno) {
@@ -17,5 +21,13 @@ public class Princezna extends PohadkovaPostava{
 
     private void zmenJmeno(String jmeno, String prijmeni) {
 
+    }
+
+    public String getPrijmeni() {
+        return prijmeni;
+    }
+
+    public void setPrijmeni(String prijmeni) {
+        this.prijmeni = prijmeni;
     }
 }
