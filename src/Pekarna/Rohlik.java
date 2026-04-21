@@ -14,4 +14,12 @@ public class Rohlik extends Pecivo{
     void popis(){
         System.out.println("Neco");
     }
+
+    public int getPosyp() {
+        return posyp;
+    }
+
+    public void setPosyp(int posyp) {
+        this.posyp = posyp;
+    }
 }
